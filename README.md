@@ -1,0 +1,1 @@
+Minimum working example of mocking a function call inside a svelte component
