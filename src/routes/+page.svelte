@@ -1,5 +1,8 @@
 <script>
-    import CatFact from '$lib/components/CatFact.svelte';
+    import FakeCatFact from '$lib/components/FakeCatFact.svelte';
+    import RealCatFact from '$lib/components/RealCatFact.svelte';
 </script>
 
-<CatFact />
+<RealCatFact />
+
+<FakeCatFact />

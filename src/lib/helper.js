@@ -14,7 +14,7 @@ function getCatFactToBeMocked() {
 
 async function getCatFactWithMockedFetch() {
 
-    const response = await fetch('https://bad_url_as_this_method_should_never_be_really_called');
+    const response = await fetch('https://bad_url_as_this_fetch_should_never_be_called');
 
     const catFact = await response.json();
 

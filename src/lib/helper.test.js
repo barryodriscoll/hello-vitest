@@ -12,7 +12,7 @@ describe('mocking examples', async () => {
         });
     });
 
-    /* commented out this test to save bandwidth
+    // commented out this test to save bandwidth
     it('get a cat fact from real api, slow and likely to fail if api is down', async () => {
         
         const result = await getCatFactReal()
@@ -21,8 +21,7 @@ describe('mocking examples', async () => {
         expect(typeof result).toBe("string")
          
     })
-    */
-
+    
     it('mock a single function from our module', async () => {
         const { mockedGetCatFact } = vi.hoisted(() => {
             return { mockedGetCatFact: vi.fn() }
