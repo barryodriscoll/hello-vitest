@@ -25,10 +25,6 @@ describe ('Test real catfact component', async () => {
 
         fetch.mockResolvedValue(createFetchResponse(fakeCatFactData))
 
-        const { mocked_fetch } = vi.hoisted(() => {
-            return { mocked_fetch: vi.fn() }
-        })
-
         const {container, getByText} = render(RealCatFact)
         expect(getByText("fetching cat fact...")).toBeInTheDocument()
         await waitFor(() => getByText("cat fact has arrived!"));

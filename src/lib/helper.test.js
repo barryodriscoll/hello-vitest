@@ -56,10 +56,6 @@ describe('mocking examples', async () => {
 
         fetch.mockResolvedValue(createFetchResponse(fakeCatFactData))
 
-        const { mocked_fetch } = vi.hoisted(() => {
-            return { mocked_fetch: vi.fn() }
-        })
-      
         const result = await getCatFactWithMockedFetch()
 
         expect(result).toBe("Cats can pick up wifi on their whiskers")
